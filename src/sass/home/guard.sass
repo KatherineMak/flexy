@@ -1,0 +1,84 @@
+.guard
+  padding-top: 45px
+  padding-bottom: 60px
+  .title
+    margin-bottom: 50px
+  &__image
+    max-width: 725px
+    width: 100%
+    margin: 0 auto 65px
+    img
+      width: 100%
+      object-fit: contain
+  &__item
+    min-width: 210px
+    .item__image
+      position: relative
+      margin: 0 auto 20px
+      display: flex
+      justify-content: center
+      min-height: 75px
+      &:before, &:after
+        content: ""
+        display: block
+        position: absolute
+        background-repeat: no-repeat
+        background-size: contain
+        width: 123px
+        height: 30px
+      img
+        object-fit: contain
+    .item__h3
+      font-weight: bold
+      font-size: 16px
+      line-height: 120%
+      text-align: center
+      letter-spacing: 3px
+      text-transform: uppercase
+      margin-bottom: 20px
+      min-width: 182px
+      min-height: 57px
+    .item__p
+      font-size: 16px
+      line-height: 150%
+      text-align: center
+      min-width: 210px
+    &:nth-of-type(1)
+      .item__image:before
+        background-image: url("../img/line-1.svg")
+        width: 189px
+        height: 160px
+        top: -180px
+        left: 30px
+    &:nth-of-type(2)
+      .item__image:before
+        background-image: url("../img/line-2.svg")
+        top: 50%
+        left: -80px
+        transform: translate(0, -50%)
+    &:nth-of-type(3)
+      .item__image:before
+        background-image: url("../img/line-3.svg")
+        top: 50%
+        left: -80px
+        transform: translate(0, -50%)
+    &:nth-of-type(4)
+      .item__image:before
+        background-image: url("../img/line-4.svg")
+        top: 50%
+        left: -70px
+        transform: translate(0, -50%)
+    &:nth-of-type(5)
+      .item__image:before
+        background-image: url("../img/line-5.svg")
+        width: 150px
+        height: 32px
+        top: 50%
+        left: -85px
+        transform: translate(0, -50%)
+      .item__image:after
+        background-image: url("../img/line-6.svg")
+        width: 189px
+        height: 160px
+        top: -200px
+        right: 40px
