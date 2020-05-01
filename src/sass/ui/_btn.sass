@@ -7,12 +7,30 @@
   border-radius: 5px
 
   font-family: Arial
+  font-weight: normal
   font-size: 16px
   line-height: 18px
   color: #FFFFFF
   &:hover
     text-decoration: none
     color: black
+
+.btn-white
+  display: flex
+  padding: 20px 40px
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  border-radius: 5px
+
+  font-family: Arial
+  font-weight: normal
+  font-size: 16px
+  line-height: 18px
+  color: #FFFFFF
+
+  &:hover
+    text-decoration: none
+    color: $red
+    border: $red
 
 .btn-red-thin
   display: flex
@@ -25,7 +43,7 @@
   border-radius: 5px
   &:hover
     text-decoration: none
-    color: black
+    color: white
     background-color: $red
 
 .btn-link-underline
@@ -38,3 +56,5 @@
   text-decoration-line: underline
   color: black
   height: 58px
+  &:hover
+    color: $red

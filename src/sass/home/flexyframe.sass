@@ -1,7 +1,8 @@
 .flexyframe
-  background-color: white
-  padding-top: 65px
-  padding-bottom: 55px
+  margin-top: -20px
+  .container
+    background-color: white
+    padding: 60px 35px 55px 20px
   &__p
     color: #53555A
     font-size: 18px
@@ -9,6 +10,13 @@
     margin-bottom: 30px
   .price
     margin-bottom: 30px
+  .duty-image_lg
+    width: 100%
+    +r($xs)
+      display: none
+    img
+      width: 100%
+      object-fit: contain
   .duty
     margin-top: 35px
     &__image
@@ -28,3 +36,6 @@
       margin-top: 40px
       .duty__image
         max-width: 133px
+  .btn-red
+    margin-left: 15px
+    margin-right: 25px

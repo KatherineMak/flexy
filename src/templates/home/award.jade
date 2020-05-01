@@ -1,21 +1,16 @@
 section.award
     .container-fluid
         .row
-            .col
+            .col-lg-6
                 .award__image
                     img(src="img/award.png", alt="award")
-            .col
+            .col-lg-6.d-flex.justify-content-center
                 .award__content
-                    .container
-                        .row
-                            .col-3
-                                h2.title-number #1
-                            .col
-                                .award__content_right
-                                    h2.title Award
-                                    h3.subtitle Winning Heavy Duty Bumper Protector
-                                    .row
-                                        .col-4
-                                            a.btn-red(href="#") Shop Now
-                                        .col-3
-                                            a.btn-link-underline(href="#") More Info
+                    .award__content_right
+                        .award__title
+                            h2.title-number #1
+                            h2.title Award
+                        .award__under-title
+                            h3.subtitle Winning Heavy Duty Bumper Protector
+                            a.btn-red(href="#") Shop Now
+                            a.btn-link-underline(href="#") More Info

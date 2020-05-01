@@ -1,7 +1,12 @@
 .cars
-  background-color: white
-  padding: 60px
-  margin-top: 20px
+  & .container
+    background-color: white
+    padding: 60px
+    margin-top: 20px
+  &__container
+    .col-2
+      margin: 0
+      padding: 0
   .btn-car
     display: flex
     flex-direction: column
@@ -11,7 +16,7 @@
     height: 138px
     padding-top: 50px
     border: 1px solid #F3F3F3
-    margin-right: 5px
+    //margin-right: 5px
     margin-top: 5px
     .btn-car__logo
       img
@@ -23,6 +28,8 @@
       margin-bottom: 15px
       color: black
     &:hover
+      position: relative
+      z-index: 1
       text-decoration: none
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 8px 8px rgba(0, 0, 0, 0.05), 0px 16px 16px rgba(0, 0, 0, 0.05), 0px 32px 32px rgba(0, 0, 0, 0.05)
       .btn-car__p

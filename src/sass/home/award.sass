@@ -1,20 +1,39 @@
 .award
+  @media (max-width: $xl)
+    padding-top: 50px
   .award__image
-    width: 765px
+    max-width: 765px
+    width: 100%
     margin-left: -20px
     img
       width: 100%
       object-fit: contain
   .award__content
     padding-top: 110px
+    @media (max-width: $xl)
+      padding-top: 50px
+      padding-bottom: 50px
     .title-number
       color: $red
     .award__content_right
-      margin-left: -30px
-      .title
-        padding-top: 65px
-        font-size: 50px
-        line-height: 59px
-        margin-bottom: 20px
-      .subtitle
-        margin-bottom: 25px
+      .award__title
+        display: flex
+        .title
+          padding-top: 65px
+          padding-left: 10px
+          font-size: 50px
+          line-height: 59px
+          margin-bottom: 20px
+          @media (max-width: $xl)
+            padding-top: 35px
+      .award__under-title
+        display: flex
+        flex-wrap: wrap
+        max-width: 550px
+        padding-left: 150px
+        @media (max-width: $xl)
+          padding-left: 110px
+        .subtitle
+          margin-bottom: 25px
+        .btn-red
+          margin-right: 25px

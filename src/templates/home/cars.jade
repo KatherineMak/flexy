@@ -1,8 +1,10 @@
-section.container
-    .cars
+section.cars
+    .container
         .row.justify-content-between
-            h2.title Fits on <span>Every Car</span>
-            a.btn-red-thin(href="#") More car brands
+            .col-6
+                h2.title Fits on <span>Every Car</span>
+            .col-3.d-flex.justify-content-end
+                a.btn-red-thin(href="#") More car brands
         .row.cars__container
                 .col-2
                     a.btn-car(href="#")
@@ -98,6 +100,3 @@ section.container
                         .btn-car__logo
                             img(src="img/audi.svg", alt="Audi")
                         p.btn-car__p Audi
-
-
-

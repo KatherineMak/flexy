@@ -1,10 +1,15 @@
 .accident
-  .accident__content
+  &__content
     background-color: white
-    margin-top: 65px
+    margin-top: 45px
     margin-right: -50px
     padding: 80px 50px 80px 60px
-    .accident__content_right
+    @media (max-width: $xl)
+      margin-top: 0
+    @media (max-width: $md)
+      padding: 80px 10px
+      margin-right: 0
+    &_right
       margin-left: 20px
       .accident__text_red
         font-weight: 500
@@ -13,11 +18,17 @@
         color: $red
         padding-top: 50px
         margin-bottom: 0
+        @media (max-width: $xl)
+          padding-top: 30px
+        @media (max-width: $xs)
+          font-size: 12px
       h3.subtitle
         max-width: 396px
         margin-bottom: 30px
-  .accident__image
-    width: 487px
+  &__image
+    max-width: 487px
+    min-width: 370px
+    width: 100%
     img
       width: 100%
       object-fit: contain
