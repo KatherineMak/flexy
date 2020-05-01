@@ -3,10 +3,23 @@
   padding-bottom: 15px
   .testimotionals__heading
     margin-bottom: 45px
+    @media (max-width: $xs)
+      .btn-red-thin
+        margin: 15px auto 0
+  .col-lg-4
+    margin: 0
+    padding: 0
+    &:nth-of-type(3)
+      .review
+        margin-right: 0
   .review
     padding: 30px 30px 35px
+    //padding: 30px 20px 35px
     background: white
-    margin-right: 15px
+    margin-right: 10px
+    @media (max-width: $lg)
+      margin-bottom: 15px
+      margin-right: 0
     &__rating
       display: flex
       padding-bottom: 30px
@@ -32,6 +45,7 @@
     &__details
       display: flex
       justify-content: space-between
+      align-items: center
     &__author
       font-size: 24px
       line-height: 28px
@@ -39,5 +53,3 @@
       font-size: 15px
       line-height: 18px
       color: #8D8D8D
-    &:nth-of-type(3)
-      margin-right: 0

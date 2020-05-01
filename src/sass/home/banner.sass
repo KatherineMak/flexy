@@ -4,10 +4,7 @@
   background-size: cover
   color: white
   padding-top: 145px
-  //height: 100%
-  //padding-top: 85px
   padding-bottom: 60px
-  //background-position-y: -80px
   &__content
     padding-bottom: 95px
   &__super-title
@@ -18,6 +15,9 @@
     text-transform: uppercase
     position: relative
     z-index: 1
+    @media (max-width: $xs)
+      font-size: 50px
+      line-height: 70px
     &:before
       content: ""
       display: block
@@ -30,15 +30,19 @@
       left: 0
       z-index: -1
   &__p
-    width: 378px
+    max-width: 378px
     font-size: 18px
     line-height: 170.55%
   .btn-white
     margin-left: 30px
+    @media (max-width: $xs)
+      margin-left: 5px
 
   .banner-item
     display: flex
     justify-content: space-between
+    max-width: 240px
+
     &__p
       width: 185px
       font-size: 18px

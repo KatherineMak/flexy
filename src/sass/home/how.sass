@@ -2,15 +2,28 @@
   .container
     background-color: white
     padding: 60px 45px
+    @media (max-width: $xl)
+      padding: 60px 20px
   .title
     margin-bottom: 50px
-  .how__right-side
+  &__image
+    width: 100%
+    img
+      width: 100%
+      object-fit: contain
+  &__right-side
     padding-left: 30px
-  .how__images
+    @media (max-width: $lg)
+      padding: 20px 40px
+  &__images
     display: flex
     flex-wrap: wrap
+    @media (max-width: 470px)
+      justify-content: center
     .how__image-sm
       margin-right: 15px
       margin-bottom: 15px
       &:nth-of-type(4n)
         margin-right: 0
+        @media (max-width: $xl)
+          margin-right: 15px

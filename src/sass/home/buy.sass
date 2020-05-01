@@ -2,6 +2,8 @@
   .container
     padding: 50px 60px
   &__content
+    @media (max-width: $lg)
+      padding-bottom: 30px
     .super-title
       font-weight: bold
       font-size: 120px
@@ -10,12 +12,26 @@
       text-transform: uppercase
       color: $red
       text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 8px 8px rgba(0, 0, 0, 0.05), 0px 16px 16px rgba(0, 0, 0, 0.05), 0px 32px 32px rgba(0, 0, 0, 0.05)
+      @media (max-width: 460px)
+        font-size: 80px
+        letter-spacing: 1px
     .subtitle
-      width: 330px
+      max-width: 330px
       margin-bottom: 20px
   .buy__image
     position: relative
+    width: 100%
+    img
+      width: 100%
+      object-fit: contain
     .buy__details
       position: absolute
       bottom: 0
       right: 0
+      @media (max-width: 460px)
+        bottom: -20px
+        .old-price
+          margin-bottom: 5px
+        .price
+          font-size: 30px
+          line-height: 37px
