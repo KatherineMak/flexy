@@ -1,14 +1,17 @@
 section.buy
     .container
-        .row.justify-content-between
-            .col-lg-4
-                .buy__content
+        .buy__content
+            .row.justify-content-between
+                .col-12
                     h2.super-title buy now
                     h3.subtitle and forget about repairing the bumper
+            .row
+                .col-lg-3
                     a.btn-red(href="#") Shop Now
-            .col-lg-8
-                .buy__image
-                    img(src="img/buy.png", alt="buy")
+                .col-lg-3.col-sm-6
+                    .buy__image
+                        img(src="img/buy-bumper.png", alt="buy-bumper")
+                .col-lg-3.col-sm-6
                     .buy__details
                         p.old-price $39.99
                         p.price $34.99

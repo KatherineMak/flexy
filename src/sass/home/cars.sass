@@ -3,17 +3,17 @@
     background-color: white
     padding: 60px
     margin-top: 20px
+    @media (max-width: $xs)
+      padding: 30px
   &__heading
     padding-bottom: 50px
+    @media (max-width: $xs)
+      padding-bottom: 20px
     .title
       margin-bottom: 0
     .btn-red-thin
       @media (max-width: $xs)
         margin: 15px auto 0
-  &__container
-    .col-2
-      margin: 0
-      padding: 0
   .btn-car
     display: flex
     flex-direction: column
@@ -26,6 +26,8 @@
     margin-top: 5px
     margin-right: auto
     margin-left: auto
+    @media (max-width: $xs)
+      width: 115px
     .btn-car__logo
       img
         width: 100%

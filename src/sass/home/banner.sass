@@ -7,6 +7,9 @@
   padding-bottom: 60px
   &__content
     padding-bottom: 95px
+    @media (max-width: $xs)
+      padding-left: 30px
+      padding-right: 30px
   &__super-title
     font-weight: bold
     font-size: 88px
@@ -37,12 +40,16 @@
     margin-left: 30px
     @media (max-width: $xs)
       margin-left: 5px
+    @media (max-width: 368px)
+      margin-left: 0
+      margin-top: 10px
 
   .banner-item
     display: flex
     justify-content: space-between
     max-width: 240px
-
+    @media (max-width: $xs)
+      margin: 0 auto 15px
     &__p
       width: 185px
       font-size: 18px
