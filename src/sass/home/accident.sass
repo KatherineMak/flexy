@@ -25,6 +25,10 @@
       h3.subtitle
         max-width: 396px
         margin-bottom: 30px
+      .title
+        span
+          @media (min-width: 601px)
+            display: none
   &__image
     max-width: 487px
     min-width: 370px
@@ -32,3 +36,6 @@
     img
       width: 100%
       object-fit: contain
+  .col-3
+    @media (max-width: $xs)
+      display: none

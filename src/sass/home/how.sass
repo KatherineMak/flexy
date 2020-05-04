@@ -15,6 +15,9 @@
     padding-left: 30px
     @media (max-width: $lg)
       padding: 20px 40px
+    @media (max-width: $xs)
+      padding: 20px 30px
+      padding-right: 15px
   &__images
     display: flex
     flex-wrap: wrap
@@ -23,6 +26,10 @@
     .how__image-sm
       margin-right: 15px
       margin-bottom: 15px
+      @media (max-width: $xs)
+        flex-direction: column
+        img
+          width: 70px
       &:nth-of-type(4n)
         margin-right: 0
         @media (max-width: $xl)
